@@ -1,0 +1,372 @@
+/****** COMMON STYLES ******/
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body, p, a, h1, h2, h3, h4, h5, h6, div {
+    font-family: 'Lato',sans-serif !important;
+}
+body {
+	background: #000000;
+}
+
+a:focus {
+	outline: 0;
+	text-decoration: none;
+}
+
+.col-2, .col-4, .col-6, .col-8, .col-10, .col-12 {
+	float: left;
+	padding: 0 1em;
+}
+.col-12 {
+	width: 100%;
+}
+.col-10 {
+	width: 83%;
+}
+.col-8 {
+	width: 66%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-4 {
+	width: 33%;
+}
+.col-2 {
+	width: 16%;
+}
+
+.header, .body {
+	width: 100%;
+	max-width: 1900px;
+	min-width: 930px;
+	margin: 0px auto;
+}
+
+.content {
+	background: none repeat scroll 0% 0% rgb(218, 218, 218);
+	position: relative;
+}
+
+.inner {
+	position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding: 1% 5%;
+}
+
+/****** HEADER ******/
+
+.header .navbar {
+    position: static;
+    z-index: 10;
+    background: #000;
+    width: 100%;
+    max-width: 1900px;
+	margin: 0;
+}
+.header .navbar .inner {
+    position: static !important;
+    width: 100%;
+    color: #fff;
+	overflow: hidden;
+}
+.header .navbar a {
+    color: inherit;
+}
+.header .navbar .menu  {
+	float: left;
+}
+.header .navbar .menuItem {
+	line-height: 2em;
+}
+.header .navbar .menu .menuItem:first-child {
+    margin-left: 0;
+}
+.header .navbar .menu .menuItem {
+    font-size: 1em;
+    margin: 0px 2em;
+    font-weight: 400;
+}
+.header .navbar .menu .menuItem:hover {
+    text-decoration: none;
+}
+.header .navbar .social  {
+	float: right;
+}
+.header .navbar .social .menuItem {
+	display: inline-block;
+}
+.header .navbar .social .menuItem img {
+    width: 2.2em;
+	margin: 0 0.5em;
+}
+.header .naavbar .social .menuItem:hover img {
+	transform: rotateY(360deg);
+}
+.header .content {
+	padding-bottom: 40%;
+	background: url("../img/background.jpg") no-repeat scroll;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	background-color: #000;
+}
+.header .intro {
+    width: 25em;
+    position: absolute;
+    top: 20%;
+    left: 12%;
+}
+.header .title {
+	margin: 0px;
+	width: 100%;
+	font-size: 41px;
+	text-align: center;
+	color: #fff;
+	font-weight: 500 !important;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+.header .subtext {
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
+	font-size: 2em;
+	text-align: center;
+    margin: 0.75em 0;
+}
+.header .description {
+	margin: 0px;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+	font-size: 1.6em;
+	text-align: center;
+}
+.header  .navFixed {
+    position: fixed;
+    top: 0;
+	width: 100%;
+}
+.header  .screens {
+    position: absolute;
+	bottom: 5em;
+	right: 3em;
+	width: 44%;
+}
+.header .screens img {
+    width: 100%;
+}
+.header .title, .header .subtext, .header .description, .title {
+    font-weight: 300;
+}
+
+/****** PART 1 ******/
+
+.realizations {
+	background: none repeat scroll 0% 0% #FFF;
+	position: static !important;
+	overflow: hidden;
+	padding-bottom: 7em;
+}
+.realizations .inner {
+    position: static !important;
+}
+.realizations .box img {
+	max-width: 50%;
+	float: none;
+	display: block;
+	margin: 0 auto;
+}
+.realizations .box .boxBody {
+    font-size: 1.1em;
+	min-height: 9em;
+}
+.realizations .box .boxTitle {
+    background: none repeat scroll 0% 0% #e84a0e;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 5px 0;
+}
+.realizations .contact {
+    border: 1px solid  rgb(160,160,160);
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    position: absolute;
+    background: #fff;
+    margin: 1em 2em;
+	display: none;
+}
+.realizations .contactButton {
+	background: none repeat scroll 0% 0% #E84A0E;
+	color: #fff;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	margin-top: 1em;
+}
+.realizations .contactButton:hover, .realizations .contactButton:focus {
+	color: #dadada;
+	text-decoration: none;
+}
+
+/****** PART 2 ******/
+
+.about {
+	padding-bottom: 40%;
+    background: #fff;
+}
+.about .front_img {
+	margin: 0 auto;
+	width: 43em;
+	z-index: 1;
+	background-size: 100% auto;
+	height: 29em;
+}
+.about .carousel {
+    perspective: 15em;
+	-moz-perspective: 15em;
+	-webkit-perspective: 15em;
+	-o-perspective: 15em;
+	-ms-perspective: 15em;
+}
+.about #carousel1 .carousel-inner {
+    width: 29.1em;
+	position: absolute;
+	left: -20.5em;
+	top: 6em;
+	transform: rotateY(-9deg);
+	-moz-transform: rotateY(-9deg);
+	-webkit-transform: rotateY(-9deg);
+	-o-transform: rotateY(-9deg);
+	-ms-transform: rotateY(-9deg);
+}
+.about #carousel2 .carousel-inner {
+    width: 80%;
+    position: absolute;
+    left: 6em;
+    top: 7em;
+}
+.about #carousel3 .carousel-inner {
+    width: 29.1em;
+	position: absolute;
+	left: 37.3em;
+	top: 6em;
+	transform: rotateY(9deg);
+	-moz-transform: rotateY(9deg);
+	-webkit-transform: rotateY(9deg);
+	-o-transform: rotateY(9deg);
+	-ms-transform: rotateY(9deg);
+}
+.about .carousel-inner .item {
+    opacity: 0.2;
+	width: 100%;
+    transition: all 0.6s ease-in-out 0s;
+	-moz-transition: all 0.6s ease-in-out 0s;
+	-webkit-transition: all 0.6s ease-in-out 0s;
+	-o-transition: all 0.6s ease-in-out 0s;
+	-ms-transition: all 0.6s ease-in-out 0s;
+}
+.about #carousel2 .carousel-inner .item.active {
+    opacity: 1;
+	width: 100%;
+}
+.carousel_content {
+	display: none;
+}
+
+/***** FONT SIZES *****/
+
+@media (min-width : 1890px) {
+	body {
+		font-size: 21px;
+	}
+}
+
+@media (min-width : 1690px) 
+and (max-width : 1890px) {
+	body {
+		font-size: 18px;
+	}
+}
+
+@media (min-width : 1490px) 
+and (max-width : 1690px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+@media (min-width : 1290px) 
+and (max-width : 1490px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media (min-width : 1125px) 
+and (max-width : 1290px) {
+	body {
+		font-size: 13px;
+	}
+}
+
+@media (min-width : 1055px) 
+and (max-width : 1124px) {
+	body {
+		font-size: 12px;
+	}
+}
+
+@media (min-width : 930px)
+and (max-width : 1055px) {
+	body {
+		font-size: 12px;
+	}
+}
+
+@media (max-width : 930px) {
+	body {
+		font-size: 17px;
+	}
+	.header .content {
+		padding-bottom: 38%;
+	}
+	.realizations {
+		padding-bottom: 3em;
+	}
+	.header .intro {
+		width: 25em;
+		margin: 0px auto;
+		position: static;
+		margin-top: 3em;
+	}
+	#carousel1, #carousel3 {
+		display: none;
+	}
+	.screens {
+		display: none;
+	}
+	.about #carousel2 .carousel-inner {
+		width: 90%;
+		position: static;
+		margin-top: 3em;
+	}
+	.about {
+		padding-bottom: 62%;
+	}
+	.col-2, .col-4, .col-6, .col-8, .col-10, .col-12 {
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
