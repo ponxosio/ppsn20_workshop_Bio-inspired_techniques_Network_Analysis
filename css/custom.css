@@ -109,11 +109,21 @@ a:focus {
     width: 2.2em;
 	margin: 0 0.5em;
 }
+
+.inlineIcons {
+  display: inline-block;
+}
+
+.inlineIcons img{
+    width: 2.2em;
+  margin: 0 0.5em;
+}
+
 .header .naavbar .social .menuItem:hover img {
 	transform: rotateY(360deg);
 }
 .header .content {
-	padding-bottom: 40%;
+	padding-bottom: 25%;
 	background: url("../img/background.jpg") no-repeat scroll;
 	background-position: 0 0;
 	background-size: 100% 100%;
@@ -291,35 +301,35 @@ a:focus {
 	}
 }
 
-@media (min-width : 1690px) 
+@media (min-width : 1690px)
 and (max-width : 1890px) {
 	body {
 		font-size: 18px;
 	}
 }
 
-@media (min-width : 1490px) 
+@media (min-width : 1490px)
 and (max-width : 1690px) {
 	body {
 		font-size: 16px;
 	}
 }
 
-@media (min-width : 1290px) 
+@media (min-width : 1290px)
 and (max-width : 1490px) {
 	body {
 		font-size: 14px;
 	}
 }
 
-@media (min-width : 1125px) 
+@media (min-width : 1125px)
 and (max-width : 1290px) {
 	body {
 		font-size: 13px;
 	}
 }
 
-@media (min-width : 1055px) 
+@media (min-width : 1055px)
 and (max-width : 1124px) {
 	body {
 		font-size: 12px;
@@ -369,4 +379,3 @@ and (max-width : 1055px) {
 		margin: 0 auto;
 	}
 }
-
